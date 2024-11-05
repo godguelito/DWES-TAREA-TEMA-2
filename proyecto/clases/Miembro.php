@@ -46,6 +46,14 @@ abstract class Miembro {  //Creación de la clase abstracta Miembro
     public function setEmail($email) {
         $this->email = $email;
     }
+
+    //Método toString
+    public function __toString() {
+        return "ID: ". $this->id. 
+               "Nombre: ". $this->nombre. 
+               "Apellidos: ". $this->apellidos. 
+               "Email: ". $this->email;
+    }
     
 }
 
