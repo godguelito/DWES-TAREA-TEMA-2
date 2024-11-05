@@ -15,7 +15,7 @@ abstract class Miembro {  //Creación de la clase abstracta Miembro
     }
 
     //Getters y setters
-    public function getId() {
+    public function getId() : int {
         return $this->id;
     }
 
@@ -31,7 +31,7 @@ abstract class Miembro {  //Creación de la clase abstracta Miembro
         return $this->email;
     }
 
-    public function setId($id) {
+    public function setId(int $id) {
         $this->id = $id;
     }
 
