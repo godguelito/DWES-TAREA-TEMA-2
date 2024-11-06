@@ -1,5 +1,5 @@
 <?php
-require_once 'clases/Alumno.php';
+require_once 'clases/Miembro.php';
 
 class Alumno extends Miembro { //Creación de la clase hija Alumno
     private int $edad;

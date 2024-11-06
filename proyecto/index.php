@@ -4,6 +4,7 @@ require_once 'clases/Alumno.php';
 require_once 'clases/Profesor.php';
 require_once 'clases/Asignatura.php';
 
+//Se muestra la colección de alumnos.
 $alumnos = Alumno::crearAlumnosdeMuestra();
 echo "<h2>Alumnos</h2>
       <ul>";
@@ -11,4 +12,14 @@ echo "<h2>Alumnos</h2>
           echo "<li>Nombre: {$alumno->getNombre()} {$alumno->getApellidos()}, Email: {$alumno->getEmail()}</li>";
       }
           echo "</ul>";
+
+//Se muestra la colección de profesores.
+$profesores= Profesor::crearProfesoresdeMuestra();
+echo "<h2>Profesores</h2>
+      <ul>";
+      foreach ($profesores as $profesor) {
+        echo "<li>Nombre: {$profesor->getNombre()}, Email: {$profesor->getEmail()}</li>";
+    }
+        echo "</ul>";
+    
 ?>

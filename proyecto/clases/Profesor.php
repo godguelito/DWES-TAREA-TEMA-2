@@ -1,13 +1,16 @@
 <?php
+require_once 'clases/Miembro.php';
 //Creacion de la clase Profesor que hereda atributos de miembro.
 class Profesor extends Miembro {
     private bool $titular = false;
     private $asignatura;
+    protected int $id;
 
     //Método constructor
     public function __construct (int $id, $nombre, $email, $asignatura){
-        parent::__construct($id, $nombre, $email);
+        parent::__construct($id,$nombre, $asignatura, $email);
         $this->asignatura = $asignatura;
+        $this->id = $id;
     }
 
     //Métodos Setters y Getters
@@ -26,6 +29,7 @@ class Profesor extends Miembro {
     public function setAsignatura($asignatura): void {
         $this->asignatura = $asignatura;
     }
+
 
     //Método estático que crea una colección de profesores de muestra.
     public static function crearProfesoresdeMuestra(): array {
