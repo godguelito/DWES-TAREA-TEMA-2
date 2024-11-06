@@ -22,4 +22,10 @@ echo "<h2>Profesores</h2>
     }
         echo "</ul>";
     
+$asignaturas= Asignatura::crearAsignaturasdeMuestra();
+    echo "<h2>Asignaturas</h2>
+      <ul>";
+      foreach ($asignaturas as $asignatura) {
+        echo "<li>Nombre: {$asignatura->getNombre()}, Créditos: {$asignatura->getCreditos()}</li>";
+    }
 ?>
