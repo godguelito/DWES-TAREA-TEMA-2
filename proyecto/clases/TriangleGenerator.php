@@ -8,10 +8,10 @@ class TriangleGenerator {
         $triangle = ""; 
         for ($i = 1; $i <= $altura; $i++) {
             for ($j = 1; $j <= $altura - $i; $j++) {
-                $triangle .= "&nbsp;";
+                $triangle .= str_repeat("&nbsp;", $altura -$i);
             }
             for ($k = 1; $k <= ($i * 2) - 1; $k++) {
-                $triangle .= "*";
+                $triangle .= str_repeat("*", ($i * 2) - 1);
             }
             $triangle .= "<br>";
         }
@@ -20,7 +20,4 @@ class TriangleGenerator {
     }
 }
 
-// Ejemplo de uso
-$triangleGenerator = new TriangleGenerator();
-echo $triangleGenerator->generateTriangle(7); //Ejemplo  pedido con la altura 7 
 ?>
