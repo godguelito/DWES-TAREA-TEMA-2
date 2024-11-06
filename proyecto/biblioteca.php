@@ -48,7 +48,7 @@ $libros = [
             <?php }
              ?>
     </table>
-        <h2>Libros de la categoría "Desarrollo Web"</h2>
+        <h2>Libros de la categoría 'Desarrollo Web'</h2>
             <ol>
                 <?php
                 // Filtro de los libros de la categoría Desarrollo Web
