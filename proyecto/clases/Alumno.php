@@ -68,6 +68,26 @@ class Alumno extends Miembro { //Creación de la clase hija Alumno
 
         return [$alumno1, $alumno2, $alumno3, $alumno4, $alumno5, $alumno6, $alumno7, $alumno8, $alumno9, $alumno10];
     }
+
+    public static function matriculacionesAsignaturas(array $alumnos, array $asignaturas) : void{
+        $alumnos[0]->matricularEnAsignatura($asignaturas[0]);  
+        $alumnos[1]->matricularEnAsignatura($asignaturas[0]);  
+        $alumnos[1]->matricularEnAsignatura($asignaturas[1]);  
+        $alumnos[2]->matricularEnAsignatura($asignaturas[0]);  
+        $alumnos[2]->matricularEnAsignatura($asignaturas[2]);  
+        $alumnos[3]->matricularEnAsignatura($asignaturas[0]);  
+        $alumnos[4]->matricularEnAsignatura($asignaturas[0]);  
+        $alumnos[4]->matricularEnAsignatura($asignaturas[1]);  
+        $alumnos[4]->matricularEnAsignatura($asignaturas[2]);  
+        $alumnos[5]->matricularEnAsignatura($asignaturas[0]);  
+        $alumnos[6]->matricularEnAsignatura($asignaturas[1]);  
+        $alumnos[6]->matricularEnAsignatura($asignaturas[1]);  
+        $alumnos[7]->matricularEnAsignatura($asignaturas[2]);  
+        $alumnos[8]->matricularEnAsignatura($asignaturas[1]);  
+        $alumnos[9]->matricularEnAsignatura($asignaturas[0]);
+    }
 }
+
+ 
 
 ?>

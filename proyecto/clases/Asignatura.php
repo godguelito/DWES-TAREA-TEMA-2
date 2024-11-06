@@ -37,6 +37,8 @@ class Asignatura {
         $this->creditos = $creditos;
     }
 
+    
+
     //Método estático que crea una colección de asignaturas de muestra.
     public static function crearAsignaturasdeMuestra(): array {
         $asignatura1 = new Asignatura(1, "DWES", "7 créditos");
